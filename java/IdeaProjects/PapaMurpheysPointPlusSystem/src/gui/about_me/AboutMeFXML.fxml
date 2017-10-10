@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="1143.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.about_me.AboutMeController">
+   <top>
+      <ToolBar blendMode="SRC_ATOP" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to bottom, rgba(236, 236, 2361) 0%, rgba(230,230,230,1) 19%, rgba(190,190,190,1) 50%, rgba(211,211,2111) 71%, rgba(200, 200, 200,1) 82%, rgba(255,255,255,1) 100%);" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fx:id="titleImageView" fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow color="#ebf3f5" spread="0.1" />
+               </effect>
+            </ImageView>
+            <Label text="About Me">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+            <ToolBar prefHeight="20.0" prefWidth="984.0" visible="false" />
+            <ImageView fx:id="closeButton" fitHeight="28.0" fitWidth="32.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+         </items>
+      </ToolBar>
+   </top>
+   <left>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="631.0" prefWidth="142.0" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="641.0" prefWidth="140.0" style="-fx-background-color: rgb(240, 240, 240);">
+               <children>
+                  <ToolBar layoutX="10.0" layoutY="45.0" prefHeight="18.0" prefWidth="1032.0" />
+                  <Button fx:id="aboutMeButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="About Me">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+                  <ToolBar layoutX="10.0" layoutY="80.0" prefHeight="18.0" prefWidth="1032.0" />
+                  <Button fx:id="experienceButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Experience">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+                  <ToolBar layoutX="10.0" layoutY="115.0" prefHeight="18.0" prefWidth="1032.0" />
+                  <Button fx:id="featuresButton" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Features">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+                  <ToolBar layoutX="10.0" layoutY="203.0" prefHeight="18.0" prefWidth="1032.0" />
+                  <Button fx:id="contactMeButton" layoutX="10.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Contact Me">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+                  <ToolBar layoutX="10.0" layoutY="185.0" prefHeight="18.0" prefWidth="1032.0" />
+                  <Button fx:id="miscButton" layoutX="10.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Misc">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+                  <ToolBar prefHeight="18.0" prefWidth="1032.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="experiencePanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(240, 240, 240);">
+               <children>
+                  <Label layoutX="60.0" layoutY="28.0" prefHeight="81.0" prefWidth="881.0" text="Along with this system, I have many other projects I've completed. Some of which include:" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="130.0" prefHeight="41.0" prefWidth="881.0" text="- Instant Messaging Systems" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="171.0" prefHeight="41.0" prefWidth="881.0" text="- Servers" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="212.0" prefHeight="41.0" prefWidth="881.0" text="- Clients" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="253.0" prefHeight="41.0" prefWidth="881.0" text="- Databases" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="295.0" prefHeight="41.0" prefWidth="881.0" text="- Network Analysis Tools" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="336.0" prefHeight="41.0" prefWidth="881.0" text="- Computer Security Software" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="377.0" prefHeight="41.0" prefWidth="881.0" text="- A number of Computer Convenience Tools, and more." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="432.0" prefHeight="71.0" prefWidth="881.0" text="If you'd like to know more, feel free to Email me or drop a Facebook message at the addresses listed on the &quot;Contact me&quot; page. I'm always open to discussion." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="programFeaturesPanel" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(240, 240, 240);">
+               <children>
+                  <Label layoutX="60.0" layoutY="57.0" prefHeight="81.0" prefWidth="881.0" text="I've tried to include as many convenience tools/shortcuts as possible for this program, some notable features are:" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="138.0" prefHeight="81.0" prefWidth="881.0" text="- Instant saving of all Account changes directly to the database. Ensures that the Accounts are safe in the event of a power outage or abrupt termination of the program." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="212.0" prefHeight="81.0" prefWidth="881.0" text="- A smart search bar, names or phone numbers can be used interchangeably to search the database and it will interpret and filter the results in the table accordingly." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="293.0" prefHeight="81.0" prefWidth="881.0" text="- An Account History is saved for all changes made to the Account, as well as a global history logging all changes made." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="368.0" prefHeight="81.0" prefWidth="881.0" text="- An Administrator Panel, requiring a login and granting access to changing the schedule, as well as viewing a private history log of all changes made everywhere. This log is searchable and can be filtered under any criteria." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="449.0" prefHeight="81.0" prefWidth="881.0" text="- Ease of Access shortcuts, such as hitting the &quot;Enter&quot; key mid-search if only one result is listed in the table to bring up that result." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="contactMePanel" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(240, 240, 240);">
+               <children>
+                  <Label layoutX="439.0" layoutY="14.0" prefHeight="81.0" prefWidth="109.0" text="Contact Me!" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="102.0" prefHeight="135.0" prefWidth="881.0" text="As stated, Computer Science is my Passion. I absolutely love everything regarding what I do. With that being said, if you see something you like, would like custom software tailored to your use, or would like to inquire or drop feedback, you can feel free to message me at any of the given location. I'm attentive to my Email and Facebook and will do my best to respond as promptly as possible. I look forward to hearing from you!" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="319.0" prefHeight="30.0" prefWidth="881.0" text="Facebook: Adam.Goins.18" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="283.0" prefHeight="25.0" prefWidth="881.0" text="Email: Officer.Goins@Gmail.com" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="362.0" prefHeight="0.0" prefWidth="881.0" text="Skype: OfficerGoins" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="449.0" prefHeight="81.0" prefWidth="881.0" text="Again, I'm very attentive to these systems and will be more than happy to respond to and answer any questions, comments, concerns you might have. " wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="miscPanel" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(240, 240, 240);">
+               <children>
+                  <Label layoutX="431.0" layoutY="14.0" prefHeight="81.0" prefWidth="125.0" text="Miscellaneous" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="102.0" prefHeight="135.0" prefWidth="881.0" text="This Page is for Miscellaneous information regarding the program, how it was designed, and what was used to create it." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="319.0" prefHeight="30.0" prefWidth="881.0" text="User Interface: Designed using JavaFX Scene Builder 2.0" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="283.0" prefHeight="25.0" prefWidth="881.0" text="Languages: Java/JavaFX" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="362.0" prefHeight="0.0" prefWidth="881.0" text="External Libraries: None, This program was made using the native Java Libraries." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="401.0" prefHeight="0.0" prefWidth="881.0" text="Developement Kit: JDK 1.8.0_60" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="439.0" prefHeight="0.0" prefWidth="881.0" text="Picture Editing: Microsoft Paint" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="530.0" prefHeight="0.0" prefWidth="881.0" text="Thanks!" wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="aboutMePanel" prefHeight="631.0" prefWidth="1002.0" style="-fx-background-color: rgb(240, 240, 240);">
+               <children>
+                  <ImageView fx:id="profilePictureImageView" fitHeight="150.0" fitWidth="200.0" layoutX="28.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="213.0" layoutY="6.0" text="Email:">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="271.0" layoutY="6.0" text="Officer.Goins@Gmail.com">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="570.0" layoutY="6.0" text="Facebook:">
+                     <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="660.0" layoutY="6.0" text="Facebook.com/Adam.Goins.18">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="211.0" layoutY="31.0">
+                     <children>
+                        <Label prefHeight="119.0" prefWidth="719.0" text="Hey Guys! My name is Adam Goins, and I built the Software you're currently using for the Point System! I'm an Applied Computer Science major at Northern Arizona University, and this software was a gift to the store to make the Point System more efficient and easier to use. " wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="13.0" layoutY="194.0" prefHeight="81.0" prefWidth="917.0" text="Computer Science is my greatest Passion, and to say I'm excited to finally see some of my work implemented would be the greatest down statement. I'm thrilled to have wrote this software for your use, and I sincerely hope you enjoy using it as much as I did making it." wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="150.0" prefHeight="34.0" prefWidth="917.0" text="A quick statement..." wrapText="true">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="294.0" prefHeight="34.0" prefWidth="917.0" text="Some background..." wrapText="true">
+                     <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="320.0" prefHeight="283.0" prefWidth="917.0" text="I come from a town in California called &quot;Hemet.&quot; I lived there for about 10 years before moving to Kingman, Arizona, Where I went to highschool and grew up for the remainder of my teen years. Upon finishing Highschool, I pursued a career in Law Enforcement where I worked at Mohave County Sheriff's Office for about 2 1/2 years as a Corrections Officer from August 2012 - December 2014. While employed, I took a few classes at the local Community College, one was a course called &quot;Computer Science I&quot; and that's where I truly fell in love with computer science. After 2 1/2 excellent years, I quit the Jail in 2014, and following were a series of unfortunate events which ultimately (and thankfully) lead me to finish going to school and to pursue a degree in Computer Science. The beautiful scenery of Flagstaff coupled with the excellent Computer Science program they have at NAU, Flagstaff was an easy choice for me. And that puts us right about here. " wrapText="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

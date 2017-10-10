@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="771.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChallengeQuestions.TicTacToe.gui.GameWindow.GameWindowController">
+   <top>
+      <ToolBar fx:id="titleBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ImageView fx:id="titleIcon" fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Pictures/Programming_Pictures/TicTacToeIcon.png" />
+               </image></ImageView>
+            <Label prefHeight="16.0" prefWidth="1044.0" text="Tic Tac Toe" wrapText="true">
+               <font>
+                  <Font name="Lucida Sans Regular" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="minimizeButton" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/minimize_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closeButton" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/close_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+        </items>
+      </ToolBar>
+   </top>
+   <bottom>
+      <TextArea fx:id="logField" prefHeight="234.0" prefWidth="1181.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane blendMode="DARKEN" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonOne" layoutX="100.0" layoutY="74.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/O-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonTwo" layoutX="300.0" layoutY="74.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button fx:id="buttonThree" layoutX="500.0" layoutY="74.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button fx:id="buttonFour" layoutX="100.0" layoutY="212.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/X-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonFive" layoutX="300.0" layoutY="212.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/O-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonSix" layoutX="500.0" layoutY="212.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/O-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonSeven" layoutX="100.0" layoutY="350.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/O-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonEight" layoutX="300.0" layoutY="350.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/X-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="buttonNine" layoutX="500.0" layoutY="350.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="150.0">
+               <graphic>
+                  <ImageView fitHeight="116.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="1181.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Gameplay">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Restart" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Rules" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Accordion layoutX="775.0" layoutY="30.0" prefHeight="461.0" prefWidth="405.0">
+              <panes>
+                <TitledPane animated="false" expanded="false" prefHeight="440.0" prefWidth="405.0" text="Chat">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="403.0">
+                           <children>
+                              <TextField fx:id="chatLine" layoutX="14.0" layoutY="396.0" prefHeight="25.0" prefWidth="315.0" />
+                              <Button fx:id="sendButton" layoutX="338.0" layoutY="396.0" mnemonicParsing="false" text="Send" />
+                              <Separator layoutY="385.0" prefHeight="3.0" prefWidth="404.0" />
+                              <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="360.0" prefViewportHeight="336.0" prefViewportWidth="374.0" prefWidth="376.0">
+                                 <content>
+                                    <VBox fx:id="chatBox" layoutX="14.0" layoutY="14.0" prefHeight="338.0" prefWidth="374.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Separator layoutX="99.0" layoutY="208.0" prefHeight="0.0" prefWidth="552.0" />
+            <Separator layoutX="99.0" layoutY="345.0" prefHeight="0.0" prefWidth="552.0" />
+            <Separator layoutX="266.0" layoutY="74.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="21.0" />
+            <Separator layoutX="473.0" layoutY="74.0" orientation="VERTICAL" prefHeight="406.0" prefWidth="0.0" />
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="168.0" layoutY="45.0" prefHeight="15.0" prefWidth="415.0" text="Starting...">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

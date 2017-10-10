@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane blendMode="EXCLUSION" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="745.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView blendMode="EXCLUSION" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Pictures/Programming%20Pictures/anonymous_login_icon.png" />
+               </image>
+            </ImageView>
+            <Label text="AlphaVizion Suite V 1.1">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="1275.0">
+               <items>
+                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+               </items>
+            </ToolBar>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

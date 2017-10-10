@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChallengeQuestions.TicTacToe.gui.StartingScreen.StartingScreenController">
+   <top>
+      <ToolBar fx:id="titleBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ImageView fx:id="titleIcon" fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true" />
+            <Label prefHeight="15.0" prefWidth="205.0" text="Enter player names..." />
+          <Button fx:id="minimizeButton" mnemonicParsing="false" style="-fx-background-color: null;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/minimize_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="closeButton" mnemonicParsing="false" style="-fx-background-color: null;">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/Programming_Pictures/close_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" text="Player One:" />
+            <TextField fx:id="playerOneField" layoutX="100.0" layoutY="14.0" prefHeight="25.0" prefWidth="220.0" />
+            <TextField fx:id="playerTwoField" layoutX="100.0" layoutY="59.0" prefHeight="25.0" prefWidth="220.0" />
+            <Label layoutX="14.0" layoutY="64.0" text="Player Two:" />
+            <Button fx:id="startButton" layoutX="138.0" layoutY="103.0" mnemonicParsing="false" text="Start Game" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

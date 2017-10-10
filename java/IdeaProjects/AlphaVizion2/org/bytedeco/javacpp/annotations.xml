@@ -1,0 +1,5 @@
+<root>
+    <item name='org.bytedeco.javacpp.opencv_core'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

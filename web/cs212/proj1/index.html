@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="thirdParty/angular/angular.min.js"></script>
+<script src="thirdParty/angular/angular-route.js"></script>
+
+<body ng-app="index">
+
+<p><a href="#/project1">Project 1</a></p>
+
+<p>Content Below!</p>
+
+<div ng-view></div>
+
+<script>
+var app = angular.module("index", ["ngRoute"]);
+app.config( function($routeProvider) {
+    $routeProvider
+    .when("/project1", {
+        templateUrl : "projects/1.html"
+    })
+});
+</script>
+
+</body>
+</html> 

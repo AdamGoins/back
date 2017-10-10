@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane blendMode="EXCLUSION" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <items>
+            <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Pictures/Programming_Pictures/wifi_tower_icon.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="16.0" prefWidth="341.0" text="Cerberus - Networks">
+               <font>
+                  <Font name="SansSerif Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="34.0" prefWidth="33.0" style="-fx-background-color: null;">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/Programming_Pictures/minimize_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="33.0" style="-fx-background-color: null;">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/Programming_Pictures/close_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </items></ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="458.0" />
+            <SplitPane dividerPositions="0.14946070878274267" layoutY="40.0" orientation="VERTICAL" prefHeight="651.0" prefWidth="458.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Name:" />
+                        <Label layoutX="250.0" layoutY="14.0" text="Signal:" />
+                        <TextField alignment="CENTER" layoutX="64.0" layoutY="9.0" text="Suddenlink-1237-5G" />
+                        <TextField alignment="CENTER" layoutX="318.0" layoutY="9.0" prefHeight="25.0" prefWidth="78.0" text="Excellent" />
+                        <Label layoutX="14.0" layoutY="51.0" text="Status:" />
+                        <TextField alignment="CENTER" layoutX="64.0" layoutY="46.0" text="Connected" />
+                     </children>
+                  </AnchorPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="15.0" prefWidth="460.0" text="Suddenlink-E552-5G">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Pictures/Programming_Pictures/wifi_signals/weak_signal_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

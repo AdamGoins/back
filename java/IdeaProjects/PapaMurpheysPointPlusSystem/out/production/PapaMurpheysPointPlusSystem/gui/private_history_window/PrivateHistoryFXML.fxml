@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPanel" blendMode="EXCLUSION" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.private_history_window.PrivateHistoryController">
+  <children>
+    <ToolBar layoutX="0.0" layoutY="0.0" prefHeight="34.0" prefWidth="867.0">
+      <items>
+        <ImageView fx:id="titleImageView" fitHeight="21.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="false" />
+        <Label text="Private History">
+          <font>
+            <Font name="Verdana" size="12.0" />
+          </font>
+        </Label>
+          <ToolBar prefHeight="13.0" prefWidth="678.0" visible="false" />
+        <Button fx:id="closeButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="" />
+      </items>
+    </ToolBar>
+    <SplitPane focusTraversable="true" orientation="VERTICAL" prefHeight="538.0" prefWidth="867.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TextField fx:id="searchField" layoutX="135.0" layoutY="19.0" prefWidth="677.0" />
+            <Label layoutX="14.0" layoutY="23.0" text="Search History:">
+              <font>
+                <Font name="Verdana Bold" size="12.0" />
+              </font>
+            </Label>
+            <Button fx:id="searchButton" contentDisplay="GRAPHIC_ONLY" layoutX="821.0" layoutY="19.0" mnemonicParsing="false" text="" />
+            <ListView fx:id="historyList" layoutX="14.0" layoutY="58.0" prefHeight="465.0" prefWidth="837.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

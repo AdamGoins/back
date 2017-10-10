@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PapaMurpheysPointPlusSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PapaMurpheysPointPlusSystem_jar</output-path>
+    <root id="archive" name="PapaMurpheysPointPlusSystem.jar">
+      <element id="module-output" name="PapaMurpheysPointPlusSystem" />
+    </root>
+  </artifact>
+</component>

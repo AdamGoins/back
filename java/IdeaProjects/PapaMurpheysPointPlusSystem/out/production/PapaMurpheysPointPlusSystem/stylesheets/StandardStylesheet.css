@@ -1,0 +1,55 @@
+
+
+
+.text-area {
+    -fx-background-color: lightgray;
+    text-area-background: lightgray;
+    -fx-text-fill: rgb(5, 5, 5);
+    -fx-highlight-text-fill: blue;
+}
+
+.root {
+    -fx-accent: rgb(200,200,200);
+    -fx-focus-color: rgb(200,200,200);
+
+}
+
+.text-field:focused {
+    -fx-border-color: rgb(200,200,200);
+}
+
+.menu-item .label {
+    -fx-text-fill: black;
+}
+
+
+.menu-item:focused {
+     -fx-background-color: lightblue;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: black;
+}
+
+.menu:hover {
+	-fx-background-color: lightblue;
+}
+
+.menu:hover .label{
+    -fx-text-fill: black;
+}
+
+.menu:showing {
+    -fx-background-color: lightblue;
+}
+
+.menu:showing .label{
+    -fx-text-fill: black;
+}
+
+
+.context-menu {
+      -fx-background-color: white;
+    -fx-font-family: "Helvetica";
+    -fx-text-fill: black;
+}

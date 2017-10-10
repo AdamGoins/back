@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="ng-scope" ng-app=""><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+      <script src="login_files/angular.js"></script>
+      <script src="login_files/textfield.js"></script>
+      <script src="login_files/digitalrain.js"></script>
+   <style>
+</style><link rel="stylesheet" type="text/css" href="login_files/login.css"></head>
+
+
+
+    
+
+<body data-ng-app="body">
+
+<p>
+<button onclick="fall()">Click Me</button> 
+</p>
+
+ <div>
+         <label>Fall Speed:</label>
+         <input class="ng-pristine ng-valid ng-touched" id="fallSpeed" ng-model="fallSpeed" placeholder="Fall Speed" onkeypress="drop(this)" type="text" width="auto">
+         <hr>
+         
+         <h1 class="ng-binding">Hello !</h1>
+      </div>
+
+<div id="myAnimation"></div>
+<div id="digitalRain"><p class="ng-binding"></p></div>
+
+
+<script>
+
+window.onload = "generateRain()";
+
+
+function myMove() {
+
+  var elem = document.getElementById("myAnimation");  
+  var value = document.getElementById("fallSpeed").value;
+  var pos = 0;
+  
+  var id = setInterval(frame, value);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
+
+
+</script>
+
+</body></html>

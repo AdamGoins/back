@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Resources/External_Jars/javacv-master/platform/src/test/java" />
+      <root url="file://$USER_HOME$/Resources/External_Jars/javacv-master/samples" />
+      <root url="file://$USER_HOME$/Resources/External_Jars/javacv-master/src/main/java" />
+    </SOURCES>
+  </library>
+</component>

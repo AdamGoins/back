@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="848.0" prefWidth="1281.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../Pictures/Programming_Pictures/search_icon.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="20.0" prefWidth="1148.0" text="OpenCV Engine">
+               <font>
+                  <Font name="Droid Sans Fallback" size="13.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" style="-fx-background-color: null;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/Programming_Pictures/minimize_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" style="-fx-background-color: null;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/Programming_Pictures/close_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="29.0" prefWidth="1281.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar layoutY="29.0" prefHeight="40.0" prefWidth="1281.0">
+              <items>
+                <Button mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" />
+                     </graphic>
+                  </Button>
+              </items>
+            </ToolBar>
+            <TabPane layoutY="511.0" prefHeight="297.0" prefWidth="1281.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Faces Detected">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="219.0" fitWidth="265.0" layoutX="43.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Pictures/Programming_Pictures/wifi_signals/woman-1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="85.0" layoutY="7.0" text="Jessica Reily" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Cars Detected">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <ImageView fitHeight="439.0" fitWidth="794.0" layoutY="72.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../Pictures/Wallpapers/Firefox_wallpaper.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

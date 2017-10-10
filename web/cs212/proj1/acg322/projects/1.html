@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app>
+   <head>
+	   <script src = "1.js"></script>
+	   <script src="angular.min.js"></script>
+	   <script src="angular-route.js"></script>
+
+	   <h1 id="project-1-header"></h1>
+   </head>
+	<style>
+		h1 {
+			color:white;
+		}
+	</style>
+   <body data-ng-app="body" style="background-color: black;">
+      <p>
+      </p>
+      <div id="project-1-container">
+		<p>
+		  <h1>Type some stuff to see it below!</h1>
+		   <br>
+		     <h1><a href="../index.html"> Click here to go back!</a></h1>
+		  </p>
+         <input id="fallSpeed" type = "text" ng-model = "sayText" placeholder = "Project-1-header">
+         <hr/>
+		  <h1> {{sayText}} </h1>
+	   <br>
+	 
+      </div>
+   </body>
+   <script>
+      document.onkeydown = function (evt) {
+      
+          evt = evt || window.event;
+          var charCode = evt.keycode || evt.which;
+          var char = getChar(charCode);
+          createFallingChar(char);
+      };
+   </script>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Personal Trainer</title>
+      <!-- Javascript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+         body {
+         background-color: black;
+         background-image: url("assets/Gym.jpg");
+         /* Full height */
+         height: 100%; 
+         /* Center and scale the image nicely */
+         background-repeat: no-repeat;
+         background-size: cover;
+         }
+         /* change the background color */
+         .navbar-custom {
+         background-color: rgba(45,45,45,.95);
+         }
+         /* change the brand and text color */
+         .navbar-custom .navbar-brand,
+         .navbar-custom .navbar-text {
+         color: rgba(255,255,255, .95);
+         }
+         /* change the link color */
+         .navbar-custom .navbar-nav .nav-link {
+         color: rgba(90, 90, 90, .1);
+         }
+         /* change the color of active or hovered links */
+         .navbar-custom .nav-item.active .nav-link,
+         .navbar-custom .nav-item:hover .nav-link {
+         color: rgba(70,70,70,1);
+         }
+         .navbar .nav>li >a {
+         color: lightgray;
+         cursor: hand;
+         }
+		  
+		  
+         .dropdown-toggle {
+         cursor: hand;
+         }
+		  
+		  
+         .navbar-custom .navbar-nav .open .dropdown-menu>li>a, .navbar-custom .navbar-nav .open .dropdown-menu {
+         background-color: rgba(45,45,45, .9);
+         }
+		  
+		  
+         .navbar-custom .navbar-nav .open .dropdown-menu {
+         background-color: rgba(45,45,45, .9);
+         color:#ffffff;
+         }
+		  
+		  
+         .navbar-custom .navbar-nav .open .dropdown-menu>li>a {
+         background-color: rgba(45,45,45, .9);
+         color:#ffffff;
+         }
+		  
+		  
+         .navbar-custom .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-custom .navbar-nav .open .dropdown-menu {
+         background-color: rgba(10, 10, 10, 1);
+         color:#ffffff;
+         }
+		  
+         .navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+         background-color: rgba(0, 0, 0, 0);
+         -webkit-animation: blurin .5s 1;
+         color: limegreen;
+         }
+		  
+		  
+         .navbar-custom .navbar-nav>li>a:focus {
+			 color: limegreen; 
+			 background-color:rgba(0,0,0,0);
+			 -webkit-animation: glow 3s infinite;
+         }
+		  
+		  
+         .icon {
+         -webkit-animation: spin 2s 1
+         }
+		  
+		  
+         @-webkit-keyframes spin {
+			 
+         	0% {
+				-webkit-transform: rotate(0deg);
+			 }
+			 
+			 25% { 
+				 -webkit-transform: rotate(360deg);
+				 
+			 }	 
+			 25% {
+				 -webkit-transform: scale(.5);
+			 }
+         }
+		  
+		  
+         @-webkit-keyframes blurin {
+         	from {
+				filter: blur(1px);
+			 }
+			 to {
+				 filter: blur(0px);
+			 }
+         }
+		  
+		  
+		 @-webkit-keyframes glow {
+			 0% {
+				 color : rgba(0, 245, 0, .9);
+			 }
+			 
+         	50% {
+				color : rgba(0, 245, 0, .6);
+			 }
+			 
+			 100% {
+         		color : rgba(0, 245, 0, .9);
+			 }
+         }
+		  
+      </style>
+   </head>
+   <body ng-app="myApp">
+      <nav class="navbar navbar-inverse navbar-custom">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-screenshot icon" style="margin-right: 5px"></span>Personal Training</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in" style="margin-right: 5px;"></span> Login</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-user" style="margin-right: 5px;"></span>Sign Up</a></li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#!home">Home</a></li>
+                  <li><a href="#!about">Certification</a></li>
+                  <li><a href="">Contact Me</a></li>
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" data-toggle="dropdown" href="">Health Tips<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-flash" style="margin-right: 10px; color:yellow;"></span>Body Building</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-leaf" style="margin-right: 10px; color:limegreen;"></span>Weight Loss</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-apple" style="margin-right: 10px; color:red;"></span>Nutrition</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div ng-view id="viewport"></div>
+      <script>
+         var app = angular.module("myApp", ["ngRoute"]);
+         app.config(function($routeProvider) {
+             $routeProvider
+             .when("/home", {
+                 templateUrl : "views/main/main.html"
+             })
+             .when("/banana", {
+                 template : "<h1>Banana</h1><p>Bananas contain around 75% water.</p>"
+             })
+             .when("/tomato", {
+                 template : "<h1>Tomato</h1><p>Tomatoes contain around 95% water.</p>"
+             });
+         });
+      </script>
+   </body>
+</html>

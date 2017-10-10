@@ -1,0 +1,5 @@
+Hello there everyone.
+
+Python is an Object Oriented Programming Language.
+
+And you are using it to view the contents of the file.
